@@ -1,0 +1,60 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex; /* 타이틀 전부 센터로 만들어주기 위함 */
+  flex-direction: column; /* 글씨가 좌우가 아닌 위아래로 놓이기 위함 */
+  align-items: center; /* 교차축을 이용하여 센터로 만들어주기 위함 */
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.welcome-header__text {
+  width: 60%; /* 텍스트 줄 */
+  opacity: 0.7; /* 투명도 */
+}
+
+/* 위 클래스(.) 작성 버전 / 아래 아이디(#) 작성 버전 */
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* not은 이것을 제외한 나머지에 적용하고 싶어요 */
+/* input type이 submit이 아닐 때에만 적용됨  */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out; /* 행동에 애니메이션을 줌 */
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 18px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
