@@ -6,7 +6,6 @@
 .user-component__column:first-child {
   display: flex;
   align-items: center;
-  padding: var(--horizontal-space);
 }
 
 .user-component__avatar {
@@ -45,5 +44,30 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.user-component__more {
+  margin-top: 10px;
+}
+
+.user-component__text span {
+  position: absolute;
+  color: tomato;
+  font-size: 14px;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  border: 1px solid tomato;
+  text-align: center;
+  top: 154px;
+  right: 220px;
 }
