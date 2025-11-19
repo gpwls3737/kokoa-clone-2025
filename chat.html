@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ BUCHU - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <!--상태바-->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>09:11</span>
+        <!--시간-->
+      </div>
+      <div class="status-bar__column">
+        <span>73%</span>
+        <!--배터리-->
+        <i class="fa-solid fa-battery-three-quarters"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">BUCHU</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Wednesday, November 19, 2025</div>
+
+      <div class="message-row">
+        <img src="img/0.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">BUCHU</span>
+          <div class="message__info">
+            <span class="message__bubble">I'm real pig</span>
+            <span class="message__time">02:12</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">I Know</span>
+            <span class="message__time">02:12</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message" />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/b2d677de1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 스크립트는 항상 바디 태그 닫기 전인 마지막에 있어야 함! -->
+  </body>
+</html>

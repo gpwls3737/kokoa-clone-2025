@@ -1,0 +1,35 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  padding-top: 40px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__column {
+  width: 33%; /* 채팅방 제목 중앙정렬 위함 */
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center; /* 채팅방 제목 중앙정렬 위함 */
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex; /* 채팅방 제목 중앙정렬 위함 */
+  justify-content: flex-end; /* 채팅방 제목 중앙정렬 위함 */
+}
+
+.alt-header__column span:last-child {
+  margin-left: 15px;
+}
